@@ -1,4 +1,6 @@
+import styles from '../styles/footer.module.css';
+
 const Footer = () => {
-  return <h1>I am Footer</h1>;
+  return <div>Footer</div>;
 };
 export default Footer;

@@ -1,16 +1,21 @@
-import Head from "next/head";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Head from 'next/head';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Layout = ({ title, children }) => {
   return (
     <>
       <Head>
-        <title>{`${title} - SmartShop`}</title>
+        <title>
+          {title ? title + '- SmartShop' : 'Buy Online - SmartShop'}
+        </title>
+        <meta name="description" content="E-commerce Online Store"></meta>
       </Head>
-      <Navbar />
-      {children}
-      <Footer />
+      <header>
+        <Navbar />
+      </header>
+      <main>{children}</main>
+      <footer>Footer</footer>
     </>
   );
 };

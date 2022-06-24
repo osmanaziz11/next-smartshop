@@ -1,0 +1,38 @@
+
+/**********************************/
+/********** Top Bar CSS ***********/
+/**********************************/
+.top_bar {
+   
+    font-size: 14px;
+    color: rgb(212, 212, 212);
+    background: var(--light-black);
+    border: none;
+}
+.top_bar p{
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.top_bar i {
+   
+}
+
+.top_bar .col-sm-6:first-child {
+    text-align: left;
+}
+
+.top_bar .col-sm-6:last-child {
+    text-align: right;
+}
+
+@media (max-width: 575.98px) {
+    .top_bar {
+        border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    
+    .top_bar .col-sm-6:first-child,
+    .top_bar .col-sm-6:last-child {
+        text-align: center;
+    }
+}

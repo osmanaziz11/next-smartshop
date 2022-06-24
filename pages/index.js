@@ -1,10 +1,7 @@
-import Layout from "../components/Layout";
+/* eslint-disable @next/next/no-img-element */
+import Layout from '../components/Layout';
 
-const index = () => {
-  return (
-    <Layout title="Home - Online Smart Shop">
-      <h1>Hi My name is Home</h1>
-    </Layout>
-  );
+const Home = () => {
+  return <Layout title="Home - Online Smart Shop">Home</Layout>;
 };
-export default index;
+export default Home;
